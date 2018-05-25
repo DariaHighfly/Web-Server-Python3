@@ -24,10 +24,20 @@ Email — опциональный параметр. Если он указан,
 
 {"id":"0e4fac17-f367-4807-8c28-8a059a2f82ac"}
 
-> curl -X GET http://localhost:8000/check?id=0e4fac17-f367-4807-8c28-8a059a2f82ac
+> curl -X GET http://localhost:8080/check?id=0e4fac17-f367-4807-8c28-8a059a2f82ac
 
 {"status":"running"}
 
-> curl -X GET http://localhost:8000/check?id=0e4fac17-f367-4807-8c28-8a059a2f82ac
+> curl -X GET http://localhost:8080/check?id=0e4fac17-f367-4807-8c28-8a059a2f82ac
 
 {"md5":"f4afe93ad799484b1d512cc20e93efd1","status":"done","url":"http://site.com/file.txt"}
+
+
+#How to use it
+
+Програма запускается в терминале №1:
+
+python3 program.py --port=8080
+
+Далее в терминале №2 пишутся запросы (как в примере). В этом же терминале мы получим ответ(при удачной компиляции и запуске), а в
+терминале №1 мы увидим код завершения - 400 или код ошибки. 
