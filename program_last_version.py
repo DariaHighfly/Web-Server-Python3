@@ -61,8 +61,8 @@ def send_mail(pro):
 
     smtp_ssl_host = 'smtp.gmail.com'
     smtp_ssl_port = 465
-    username = 'dariahighfly@gmail.com'
-    password = '123DariaHighfly'
+    username = 'YOUR E-MAIL'
+    password = 'YOUR PASSWORD'
     sender = username 
     targets = new_mail
     
